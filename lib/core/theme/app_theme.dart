@@ -13,7 +13,8 @@ class AppTheme {
   static ThemeData get lightTheme {
     return ThemeData(
       useMaterial3: true,
-      colorScheme: ColorScheme.light(
+      colorScheme: ColorScheme.fromSeed(
+        seedColor: bgColor,
         primary: primaryColor,
         secondary: primaryColor,
       ),
